@@ -47,6 +47,24 @@ namespace ReactAPI1.Controllers
                 }
                 return product;
             }
+
+        //[HttpPost]
+        //public List<ProductModel> Post(ProductModel product)
+        //{
+        //    return products.ToList();
+        //    db.SaveChanges();
+        //}
         
+        //[HttpPut]
+        //public void PUT(int id, ProductModel product)
+        //{
+        //    var product1 = db.ProductModel.Find(id);
+        //    product1.Email = product.ProductId;
+        //    product1.FullName = product.ProductName;
+        //    product1.Location = product.ProductCategory;
+        //    product1.Mobile = product.ProductPrice;
+        //    db.Entry(product1).State = System.Data.Entity.EntityState.Modified;
+        //    db.SaveChanges();
+        //}
     }
 }
