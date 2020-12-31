@@ -10,6 +10,6 @@ namespace ReactAPI1.Models
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public string ProductCategory { get; set; }
-        public decimal ProductPrice { get; set; }
+        public string ProductPrice { get; set; }
     }
 }
