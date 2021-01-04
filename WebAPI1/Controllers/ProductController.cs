@@ -53,6 +53,7 @@ namespace ReactAPI1.Controllers
             }
             return product;
         }
+
         [HttpPost]
         public IList<ProductModel> Post([FromBody] ProductModel product)
         {
@@ -92,8 +93,9 @@ namespace ReactAPI1.Controllers
                 command.Parameters.Add(new SqliteParameter("@productPrice", product.ProductPrice.ToString()));
 
                 command.CommandText = "insert into items(productid, productname, productcategory, productprice) values(@productId, @productName, @productCategory, @productPrice)";
-                command.ExecuteNonQuery();
+                command.ExecuteNonQuery();                
             }
+
         }
         
         private void UpdateProduct(ProductModel product)
@@ -118,6 +120,7 @@ namespace ReactAPI1.Controllers
             using (SqliteConnection connection = CreateConnection())
             {
                 SqliteCommand command = connection.CreateCommand();
+                ;
                 command.CommandType = System.Data.CommandType.Text;
 
 

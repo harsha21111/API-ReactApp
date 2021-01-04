@@ -92,7 +92,7 @@ export class ProductsList extends Component {
                         <tbody>
                             {
                                 this.state.products.map((p, index) => {
-                                    return <tr key={index}><td>{p.productId}</td><td> {p.productName}</td><td>{p.productCategory}</td><td>{p.productPrice}</td>
+                                    return <tr key={index}><td>hello all</td><td>{p.productId}</td><td> {p.productName}</td><td>{p.productCategory}</td><td>{p.productPrice}</td>
                                     </tr>;
                                 })
                             }

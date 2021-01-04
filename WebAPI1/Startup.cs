@@ -32,7 +32,10 @@ namespace ReactAPI1
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("https://localhost:44311").AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                                      builder.WithOrigins("https://localhost:44311")
+                                      .AllowAnyOrigin()
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod();
                                   }) ;
             });
 
